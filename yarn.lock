@@ -3065,6 +3065,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-themes@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "next-themes@npm:0.2.1"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: 10c0/979dec0a2de049ce7d1b5da835e7f7dc3b7ec83ba9e464348f497a52a6a6e5b5c395c97f071f66a63f50f22cce89fb6d19061ec7e75643b0eab215b21794bde7
+  languageName: node
+  linkType: hard
+
 "next@npm:14.1.0":
   version: 14.1.0
   resolution: "next@npm:14.1.0"
@@ -3139,6 +3150,7 @@ __metadata:
     eslint-plugin-tailwindcss: "npm:^3.14.1"
     lucide-react: "npm:^0.321.0"
     next: "npm:14.1.0"
+    next-themes: "npm:^0.2.1"
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"

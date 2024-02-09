@@ -9,11 +9,11 @@ export default function ResponsiveMenu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <Menu className="h-6 w-6 md:hidden" />
+        <Menu className="size-6 md:hidden" />
       </SheetTrigger>
       <SheetContent side="left">
         <div className="flex flex-col gap-4">
-          <Link href="/wrhite">
+          <Link href="/postes-ton-article">
             <Button variant="ghost">Ecrits ton article</Button>
           </Link>
           <p>Les Articles</p>
