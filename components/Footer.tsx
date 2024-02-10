@@ -27,6 +27,7 @@ export default function Footer() {
             <Button variant="ghost">Ecrits ton article</Button>
           </Link>
         </div>
+        <p>By Guillaume Duplan</p>
       </PageContainer>
     </footer>
   );
