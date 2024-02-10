@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="border-t p-4">
       <PageContainer>
-        <div className="flex flex-col items-start justify-center md:flex-row md:items-center">
+        <div className="flex flex-col flex-wrap items-start justify-center md:flex-row md:items-center">
           <h1 className="bg-gradient-to-br from-red-400 to-blue-600 bg-clip-text text-2xl font-bold text-transparent ">
             FrigoBlog
           </h1>

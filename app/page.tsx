@@ -2,31 +2,48 @@
 
 import PageContainer from "@/components/PageContainer";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import station from "@/public/station.jpeg";
+import HeroImage from "@/components/HeroImage";
+import { Input } from "@/components/ui/input";
+import { COMPONENTS } from "@/utils/analyses";
+import Link from "next/link";
+import { Types } from "@/utils/types";
+import PostList from "@/components/PostList";
+import { Post } from "@/utils/post";
 
 export default function Home() {
   return (
     <PageContainer>
-      <div className="relative m-auto">
-        <div className="sm:max-g-w-xl bg-secondary/80 roiunded-lg max-w-xs p-4">
-          <Image
-            src={station}
-            objectFit="contain"
-            alt="Station NH3"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-              margin: "auto",
-              zIndex: "-1",
-            }}
-            className="m-auto rounded-md"
-          />
-          <h1 className="text-block text-3xl font-bold sm:text-5xl dark:text-white ">
-            Devenons de meilleurs frigoristes
-          </h1>
+      <div className="relative mt-6 flex py-10">
+        <div className="h-80 w-full">
+          <div className="bg-secondary/80 m-20 rounded-lg p-10">
+            <div className="text-block text-center text-2xl font-bold">
+              Devenons de meilleurs frigoristes
+            </div>
+            <HeroImage />
+            <Input
+              type="email"
+              placeholder="Email"
+              className="mt-4 w-full py-6 text-xl"
+            />
+            <Button size="lg" className="mt-4 w-full py-6 text-xl">
+              Abonnez-vous à la newsletter!!
+            </Button>
+          </div>
         </div>
+      </div>
+      <div className="mt-4 flex flex-row justify-center">
+        {COMPONENTS.map((component: Types) => (
+          <Link
+            key={component.id}
+            href={component.href}
+            className="block px-2 py-1 text-lg"
+          >
+            <Button variant="outline">{component.title}</Button>
+          </Link>
+        ))}
+      </div>
+      <div>
+        <PostList posts={Post} />
       </div>
     </PageContainer>
   );

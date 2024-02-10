@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body suppressHydrationWarning={true} className={inter.className}>
         <DarkModeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col justify-between">
             <Header />

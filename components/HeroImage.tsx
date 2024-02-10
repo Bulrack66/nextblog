@@ -4,19 +4,20 @@ import station from "@/public/station.jpeg";
 
 const HeroImage = () => {
   return (
-    <div className="relative size-full">
-      <Image
-        className="object-fit:cover object-position:center -z-1"
-        src={station}
-        alt="hero image example"
-        quality={100}
-      />
-
-      <div className="flex flex-col items-center">
-        <h1>Hero Image</h1>
-        <p>Next.js 13 hero image example.</p>
-      </div>
-    </div>
+    <Image
+      src={station}
+      alt="Station NH3"
+      sizes="100%"
+      placeholder="blur"
+      blurDataURL={"@/public/station.jpeg"}
+      quality={100}
+      fill
+      style={{
+        objectFit: "cover",
+        zIndex: "-1",
+        borderRadius: "8px",
+      }}
+    />
   );
 };
 
