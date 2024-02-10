@@ -1,16 +1,16 @@
 import { Post } from "@/utils/types";
-import Link from "next/link";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import Image from "next/image";
-import { Badge } from "./ui/badge";
 import { Eye, MessageCircle } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Badge } from "./ui/badge";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 
 type Props = {
   post: Post;
 };
 export default function PostCard({ post }: Props) {
   return (
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/articles/${post.slug}`}>
       <Card className="flex h-full w-64 flex-col justify-between rounded-lg border-2">
         <CardHeader className="">
           <div className="relative block aspect-square">

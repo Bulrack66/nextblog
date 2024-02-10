@@ -1,7 +1,15 @@
 export type Types = {
   id: number;
   title: string;
+  image: string;
   href: string;
+  caption: string;
+  date: string;
+  minutesToRead: number;
+  author: string;
+  nbViews: number;
+  nbComments: number;
+  slug: string;
   description: string;
 };
 
