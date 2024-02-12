@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
-import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import {
   NavigationMenu,
@@ -15,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 import { COMPONENTS } from "@/utils/analyses";
 
 export default function HeaderNavigation() {
@@ -22,7 +22,7 @@ export default function HeaderNavigation() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Prepares toi</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Prépares toi</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -35,12 +35,11 @@ export default function HeaderNavigation() {
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Le metier du froid
                     </div>
-                    // eslint-disable-next-line react/jsx-no-comment-textnodes
+
                     <p className="text-muted-foreground text-sm leading-tight">
                       Le froid c'est compliqué, c'est un peu comme si on avait
-                      mis tout les métiers du second oeuvre dans une boite et //
-                      eslint-disable-next-line react/no-unescaped-entities qu'on
-                      l'avait secoué trés fort, avec un soupson de chimie.
+                      mis tout les métiers du second oeuvre dans une boite et
+                      qu'on l'avait secoué trés fort, avec un soupson de chimie.
                     </p>
                   </a>
                 </NavigationMenuLink>

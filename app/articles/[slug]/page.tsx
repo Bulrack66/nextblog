@@ -1,6 +1,7 @@
 "use client";
 
 import Date from "@/components/Date";
+import EyeCircle from "@/components/EyeCircle";
 import PageContainer from "@/components/PageContainer";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
@@ -60,7 +61,7 @@ export default function PostTonArticle({ params }: Props) {
       <div className="mt-3 flex items-center justify-between p-3">
         <div className="flex items-center justify-center gap-3">
           <Avatar>
-            <AvatarImage src="/img/shadcn.jpg"></AvatarImage>
+            <AvatarImage src="https://github.com/shadcn.png"></AvatarImage>
             <AvatarFallback>{post.author}</AvatarFallback>
           </Avatar>
           <div>
@@ -70,6 +71,7 @@ export default function PostTonArticle({ params }: Props) {
             </p>
           </div>
         </div>
+        <EyeCircle text1={post.nbComments} text2={post.nbViews} />
       </div>
       <Separator />
       <div className="mt-4 flex flex-row justify-center">

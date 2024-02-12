@@ -1,7 +1,7 @@
 import { Post } from "@/utils/types";
-import { Eye, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import EyeCircle from "./EyeCircle";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 
@@ -27,18 +27,7 @@ export default function PostCard({ post }: Props) {
           <Badge variant="outline">{post.author}</Badge>
         </CardContent>
         <CardFooter className="gap-2">
-          <div className="flex gap-2">
-            <div className="flex items-center gap-1">
-              <MessageCircle size={20} className="text-slate-500" />
-              <p className="text-slate-500">{post.nbComments}</p>
-            </div>
-          </div>
-          <div className="flex gap-2">
-            <div className="flex items-center gap-1">
-              <Eye size={20} className="text-slate-500" />
-              <p className="text-slate-500">{post.nbViews}</p>
-            </div>
-          </div>
+          <EyeCircle text1={post.nbComments} text2={post.nbViews} />
         </CardFooter>
       </Card>
     </Link>

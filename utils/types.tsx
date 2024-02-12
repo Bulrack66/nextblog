@@ -25,3 +25,9 @@ export type Post = {
   nbComments: number;
   slug: string;
 };
+
+export type Article = {
+  id: number;
+  name: string;
+  slug: string;
+};

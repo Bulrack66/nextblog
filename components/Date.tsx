@@ -5,5 +5,5 @@ type DateProps = {
 };
 export default function Date({ dateString }: DateProps) {
   const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, "d/M/Y")}</time>;
+  return <time dateTime={dateString}>{format(date, "d/M/y")}</time>;
 }

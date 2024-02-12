@@ -1,6 +1,9 @@
 "use server";
 
-import React from "react";
+import PageContainer from "@/components/PageContainer";
+import PageTitle from "@/components/PageTitle";
+import PostList from "@/components/PostList";
+import { COMPONENTS } from "@/utils/analyses";
 
 type Props = {
   params: {
@@ -10,5 +13,12 @@ type Props = {
 
 export default async function ArticlePage({ params }: Props) {
   const { slug } = params;
-  return <> La Page d'arcticle {slug} </>;
+  return (
+    <PageContainer>
+      <div className="px4 py-10">
+        <PageTitle title={slug.replace("-", " ")} />
+        <PostList posts={COMPONENTS} />
+      </div>
+    </PageContainer>
+  );
 }

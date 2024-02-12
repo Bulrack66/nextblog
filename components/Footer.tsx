@@ -1,7 +1,7 @@
-import PageContainer from "./PageContainer";
 import { COMPONENTS } from "@/utils/analyses";
 import { Types } from "@/utils/types";
 import Link from "next/link";
+import PageContainer from "./PageContainer";
 import { Button } from "./ui/button";
 
 export default function Footer() {
@@ -24,7 +24,7 @@ export default function Footer() {
             ))}
           </div>
           <Link href="/postes-ton-article">
-            <Button variant="ghost">Ecrits ton article</Button>
+            <Button variant="ghost">Ecris ton article</Button>
           </Link>
         </div>
         <p>By Guillaume Duplan</p>
