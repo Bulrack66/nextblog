@@ -4,7 +4,7 @@ import PageContainer from "@/components/PageContainer";
 import PostList from "@/components/PostList";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { NextAuthProvider } from "@/provider/NextAuthProvider";
+import NextAuthProvider from "@/providers/NextAuth";
 import { COMPONENTS } from "@/utils/analyses";
 import { Post } from "@/utils/post";
 import { Types } from "@/utils/types";

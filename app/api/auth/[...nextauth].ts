@@ -1,4 +1,5 @@
 import prisma from "@/lib/prisma";
+// import GoogleProvider from "@/providers/google";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import type { NextApiRequest, NextApiResponse } from "next";
 import NextAuth from "next-auth";
@@ -19,6 +20,10 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
         clientId: githubId,
         clientSecret: githubSecret,
       }),
+      // GoogleProvider({
+      //   clientId: process.env.GOOGLE_CLIENT_ID,
+      //   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      // }),
     ],
   });
 }

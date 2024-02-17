@@ -7,6 +7,7 @@ export default function ErrorPage() {
     <PageContainer>
       <div className="mt-12 flex flex-col">
         <Image
+          priority={true}
           src={panda}
           width={300}
           height={300}
